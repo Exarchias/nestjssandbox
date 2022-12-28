@@ -9,6 +9,18 @@ nest g module tasks
 
 nest g controller tasks --no-spec
 
-(remember to add a comma after the [TasksController] in the Tasks module. It is for lint reasons. Nest-cli does lint mistakes)
+Remember to add a comma after the [TasksController] in the Tasks module. It is for lint reasons. Nest-cli does lint mistakes
+
+yarn start:dev
+
+nest g service tasks --no-spec
+
+add import
+import { TasksService } from './tasks.service';
+and constructor
+constructor(private tasksService: TasksService) {}
+in TasksController class
+
+yarn start:dev
 
 
