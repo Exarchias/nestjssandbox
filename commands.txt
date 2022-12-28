@@ -6,3 +6,9 @@ nest new nestjs-task-management
 nest g 
 nest g --help
 nest g module tasks
+
+nest g controller tasks --no-spec
+
+(remember to add a comma after the [TasksController] in the Tasks module. It is for lint reasons. Nest-cli does lint mistakes)
+
+
