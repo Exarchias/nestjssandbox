@@ -30,6 +30,19 @@ yarn add uuid
 yarn start:dev
 
 
+lecture 20
+On @Post there are 2 ways to access the parameters of the request.
+The one is the @Body decorator that fetches all the parameters
+for example: 
+createTask(@Body() body){ console.log('body:', body);}
+which accesses all the contents of body.
+And the second way is by accessing each parameter individually. like the following example:
+createTask(@Body('title') title: string){ console.log('Title:', title);}
+which accesses only the contents of the title parameter.
+
+post on postman. Put the parameters on the x-www-form-urlencoded inside the Body tab, otherwise there is the possibility that they will not be recognized.
+
+
 
 
 
