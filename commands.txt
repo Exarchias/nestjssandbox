@@ -50,3 +50,13 @@ yarn start:dev
 Also we need to add the line:
 app.useGlobalPipes(new ValidationPipe());
 on bootstrap() in main.ts to make the app to use the validation pipes.
+
+Lectures 32 and 33
+In both lectures 32 and 33 the exception NotFoundException that was in the getTaskById() method in Tasks Service, was not working.
+The issue was because for some reason the command:
+yarn start:dev
+Was not compiling the code for some reason, so I used 
+yarn build
+and
+yarn start:dev
+To solve the issue.
