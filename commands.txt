@@ -42,7 +42,11 @@ which accesses only the contents of the title parameter.
 
 post on postman. Put the parameters on the x-www-form-urlencoded inside the Body tab, otherwise there is the possibility that they will not be recognized.
 
+Lecture 31 ValidationPipe creating a task
+For Validation we need to install the following packages:
+yarn add class-validator class-transformer
+yarn start:dev
 
-
-
-
+Also we need to add the line:
+app.useGlobalPipes(new ValidationPipe());
+on bootstrap() in main.ts to make the app to use the validation pipes.
